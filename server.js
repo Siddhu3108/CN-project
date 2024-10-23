@@ -9,14 +9,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 app.get('/',(req,res)=>{
   res.sendFile(__dirname + "/public/index.html");
 })
-app.get('/game', (req, res) => {
-    res.redirect('https://siddhu3108.github.io/SimonGame/');
-});
-
 // Define the port
 const PORT = 3000;
 app.get('/about',(req,res)=>{
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/public/about.html");
 })
 
 // Start the server
